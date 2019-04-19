@@ -1,0 +1,15 @@
+.idea/ClojureProjectResolveSettings.xml
+.idea/compiler.xml
+.idea/libraries/Leiningen__clojure_complete_0_2_5.xml
+.idea/libraries/Leiningen__nrepl_0_6_0.xml
+.idea/libraries/Leiningen__org_clojure_clojure_1_10_0.xml
+.idea/libraries/Leiningen__org_clojure_core_specs_alpha_0_2_44.xml
+.idea/libraries/Leiningen__org_clojure_spec_alpha_0_2_176.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
+CHANGELOG.md
+clojure.calculator.iml
+doc/intro.md
+project.clj
