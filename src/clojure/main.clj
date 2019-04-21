@@ -1,7 +1,8 @@
 "Namespace"
-(ns clojure.calculator)
+(ns clojure.main)
 
-"Add many numbers together"
+"-- THE BASICS --"
+"Add many numbers together. Apply will take the + function and pass all of nums to it"
 (defn addn [nums]
   (apply + nums))
 
@@ -18,10 +19,14 @@
 (prn "Multiplication of n numbers:" (muln [5 4 5]))
 (prn "Divide two numbers:" (div 4 2))
 
-"Try using a higher order function"
+"-------------------------------------------------"
+
+" -- INTERESTING THINGS --"
+"Try using a higher order function ..."
 (defn addone [num]
   (+ num 1))
 
+"Map will apply the function to each element in the list. It treats another function like a parameter!"
 (defn incn [nums]
   (map addone nums))
 
