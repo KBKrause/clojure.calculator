@@ -1,33 +1,32 @@
-"Namespace"
 (ns clojure.main)
 
-"-- THE BASICS --"
-"Add many numbers together. Apply will take the + function and pass all of nums to it"
-(defn addn [nums]
-  (apply + nums))
+; ELEMENTARY
+; -------------------------
+; 1. Nothing but the Truth
+; This is a clojure form. Enter a value which will make the form evaluate to true.
+; Don't over think it! If you are confused, see the getting started page. Hint: true is equal to true.
 
-"Multiply many numbers together"
-(defn muln [nums]
-  (apply * nums))
+; (= __ true)
 
-"Divide two numbers"
-(defn div [num denom]
-  (/ num denom))
+(assert (= true true))
+; -------------------------
+; 2. Simple Math
+; If you are not familiar with polish notation, simple arithmetic might seem confusing.
+; Note: Enter only enough to fill in the blank (in this case, a single number) - do not retype the whole problem.
 
-"Do some basic math ..."
-(prn "Addition of n numbers:" (addn [1 2]))
-(prn "Multiplication of n numbers:" (muln [5 4 5]))
-(prn "Divide two numbers:" (div 4 2))
+; (= (- 10 (* 2 3)) __)
 
-"-------------------------------------------------"
+(assert (= (- 10 (* 2 3))) 4)
+; -------------------------
+; 3. Intro to Strings
+; Clojure strings are Java strings. This means that you can use any of the Java string methods on Clojure strings.
 
-" -- INTERESTING THINGS --"
-"Try using a higher order function ..."
-(defn addone [num]
-  (+ num 1))
+; (= __ (.toUpperCase "hello world"))
 
-"Map will apply the function to each element in the list. It treats another function like a parameter!"
-(defn incn [nums]
-  (map addone nums))
+(assert (= "HELLO WORLD" (.toUpperCase "hello world")))
+; -------------------------
+; 4. Intro to Lists
+; Lists can be constructed with either a function or a quoted form.
 
-(prn "Add 1 to these numbers:" (incn [1 2 3]))
+; (= (list __) '(:a :b :c))
+;http://www.4clojure.com/problem/4
